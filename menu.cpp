@@ -2,6 +2,13 @@
 #include <conio.h>
 using namespace std;
 
+int n;
+
+void tukar(int *a, int *b) {
+    int ubah = *a;
+    *a = *b;
+    *b = ubah;
+}
 
 void dMenu(){
 system("cls");
@@ -23,6 +30,7 @@ getch();
 
 
 int main() {
+int data[100];
 char pl;
 do
 {
@@ -33,6 +41,12 @@ do
    case '1':
     /* code */
     mPertama("pertama");
+    cout << "Masukkan jumlah data: ";
+            cin >> n; 
+            for (int i = 0; i < n; i++) {
+                cout << "Masukkan data ke-" << i + 1 << ": ";
+                cin >> data[i];
+            }
     break;
    case '2':
     mPertama("ke- dua");
