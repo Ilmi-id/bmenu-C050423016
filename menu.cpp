@@ -43,10 +43,6 @@ do
     mPertama("pertama");
     cout << "Masukkan jumlah data: ";
             cin >> n; 
-            for (int i = 0; i < n; i++) {
-                cout << "Masukkan data ke-" << i + 1 << ": ";
-                cin >> data[i];
-            }
     break;
    case '2':
     mPertama("ke- dua");
