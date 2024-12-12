@@ -51,6 +51,11 @@ do
    case '2':
     mPertama("ke- dua");
     /* code */ 
+    cout << "Data yang dimasukkan: \n";
+                for (int i = 0; i < n; i++) {
+                    cout << "Data ke-" << i + 1 << ": " << data[i] << endl;
+                }
+                getch();
     break;  
    case '3':
     mPertama("ke- tiga");
