@@ -24,7 +24,7 @@ cout<<"Masukan angka :";
 
 void mPertama(string pesan){
 system("cls");
-cout<<"hallo saya menu "<<pesan;
+// cout<<"hallo saya menu "<<pesan;
 getch();
 }
 
@@ -40,7 +40,8 @@ do
   {
    case '1':
     /* code */
-    mPertama("pertama");
+    // mPertama("pertama");
+    system("cls");
     cout << "Masukkan jumlah data: ";
       cin >> n; 
         for (int i = 0; i < n; i++) {
@@ -48,8 +49,9 @@ do
            cin >> data[i];}
     break;
    case '2':
-    mPertama("ke- dua");
+    // mPertama("ke- dua");
     /* code */ 
+    system("cls");
     cout << "Data yang dimasukkan: \n";
         for (int i = 0; i < n; i++) {
           cout << "Data ke-" << i + 1 << ": " << data[i] << endl; }
