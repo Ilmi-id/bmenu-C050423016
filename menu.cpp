@@ -58,30 +58,10 @@ do
    case '3':
     mPertama("ke- tiga");
     /* code */
-    for (int i = 0; i < n - 1; i++) {
-       for (int j = 0; j < n - i - 1; j++) {
-          if (data[j] > data[j + 1]) {
-              tukar(&data[j], &data[j + 1]);}
-        }
-     }
-    cout << "Data setelah sorting ASC: \n";
-    for (int i = 0; i < n; i++) {
-    cout << "Data ke-" << i + 1 << ": " << data[i] << endl;}
-    getch();
     break;  
    case '4':
     mPertama("ke- empat");
     /* code */
-    for (int i = 0; i < n - 1; i++) {
-      for (int j = 0; j < n - i - 1; j++) {
-          if (data[j] < data[j + 1]) {  
-          tukar(&data[j], &data[j + 1]);}
-      }
-     }
-     cout << "Data setelah sorting DSC: \n";
-     for (int i = 0; i < n; i++) {
-        cout << "Data ke-" << i + 1 << ": " << data[i] << endl;}
-      getch();
     break;  
   case '5':
     /* code */
