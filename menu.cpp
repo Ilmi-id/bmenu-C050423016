@@ -10,6 +10,19 @@ void tukar(int *a, int *b) {
     *b = ubah;
 }
 
+void bubble_sort(int data[]){
+  for (int i=1; i<n; i++){
+    for(int j=n-1; j>=i; j--) {
+      if(data[j] <data[j-1]) tukar(&data[j], &data[j-1]);
+    }
+  }
+  system("cls");
+  cout << "Data setelah ascending : \n";
+  for (int i = 0; i < n; i++) {   
+          cout << data[i] << endl; }
+  getch();
+}
+
 void dMenu(){
 system("cls");
 cout<<"Aplikasi Sorting Bubble"<<"\n";       
@@ -27,6 +40,7 @@ system("cls");
 // cout<<"hallo saya menu "<<pesan;
 getch();
 }
+
 
 
 int main() {
@@ -58,8 +72,9 @@ do
     getch();
     break;  
    case '3':
-    mPertama("ke- tiga");
+    // mPertama("ke- tiga");
     /* code */
+    bubble_sort(data);
     break;  
    case '4':
     mPertama("ke- empat");
